@@ -61,3 +61,16 @@ switch (expresion){
 		//sentencias
 }
 ```
+
+## While
+```java=
+while(condition){
+	//código a repetir
+}
+```
+## For
+```java=
+for(int i = 0; i < 10; i++){
+	System.out.println("i: "+i);
+}
+```
