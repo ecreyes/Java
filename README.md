@@ -1,4 +1,4 @@
-#Instalación de JDK y JRE
+# Instalación de JDK y JRE
 
 JDK: Java Development Kit
 JRE: Java Runtime Environment
@@ -9,6 +9,7 @@ JRE es el Java Runtime Environment o, en español, el Entorno de Ejecución de J
 
 [Descargar JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-#Instalacion Netbeans
+# Instalacion Netbeans
 Se va a instalar Netbeans en español y la versión completa para windows, se puede encontrar en el siguiente enlace:
+
 [Descargar Netbeans](https://netbeans.org/downloads/)
