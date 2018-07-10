@@ -13,3 +13,51 @@ JRE es el Java Runtime Environment o, en español, el Entorno de Ejecución de J
 Se va a instalar Netbeans en español y la versión completa para windows, se puede encontrar en el siguiente enlace:
 
 [Descargar Netbeans](https://netbeans.org/downloads/)
+
+# Sintaxis del lenguaje
+
+## Operadores logicos y relacionales
+```java=
+&& //AND
+|| //OR
+> //mayor
+>= //mayor o igual
+< //menor
+<= //menor o igual
+== //igual
+!= //distinto
+```
+
+## If
+```java=
+if(condition){
+
+}else{
+
+}
+
+if(condition){
+
+}else if(condition){
+
+}else{
+
+}
+```
+
+## Switch
+```java=
+switch (expresion){
+	case valor1:
+		//sentencias
+		break;
+	case valor2:
+		//sentencias
+		break;
+	case valorN:
+		//sentencias
+		break;
+	default:
+		//sentencias
+}
+```
