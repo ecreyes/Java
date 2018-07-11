@@ -14,7 +14,37 @@ Se va a instalar Netbeans en español y la versión completa para windows, se pu
 
 [Descargar Netbeans](https://netbeans.org/downloads/)
 
+# Conceptos.
+## Orientacion a objetos
+Puede haber más de un Constructor en la Clase ya que se permite la sobre carga de métodos.
+El operador `this` sirve para acceder a los atributos de la clase.
+
+## Inicialización variables
+Un objeto por default se inicializa con `null`
+un int con 0 y un boolean con false.
+
+## Memoria Stack y Heap
+Memoria Stack se utiliza para almacenar las variables Locales y llamadas de funciones,tiempo de vida
+es corto.
+```=java
+//p1 y p2 apuntan al mismo objeto en el HEAP
+Persona p1 = new Persona();
+Persona p2 = p1;
+```
+
+Memoria Heap se utiliza para almacenar los objetos,tienen tiempo de duracion prologando.
+
+
 # Sintaxis del lenguaje
+
+## Main para ejecutar en consola
+```=java
+public class Main{
+	public static void main(String[] args){
+		System.out.println("Hola mundo");
+	}
+}
+```
 
 ## Operadores logicos y relacionales
 ```java=
@@ -79,8 +109,6 @@ for(int i = 0; i < 10; i++){
 * modificadorDeAcceso: puede ser public,protected,private
 * tipo: tipo de dato, ej: int,String,char, etc..
 
-Puede haber más de un Constructor en la Clase ya que se permite la sobre carga de métodos.
-
 ```java=
 //Clase
 modificadorDeAcceso class NombreClase{
@@ -100,3 +128,4 @@ modificadorDeAcceso class NombreClase{
 
 }
 ```
+
