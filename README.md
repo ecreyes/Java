@@ -89,7 +89,7 @@ modificadorDeAcceso class NombreClase{
 	modificadorDeAcceso tipo nombreAtributo2;
 
 	//Constructor
-	NombreClase(tipo arg1,tipo arg2,etc..){
+	modificadorDeAcceso NombreClase(tipo arg1,tipo arg2,etc..){
 		//cuerpo del constructor
 	}
 
