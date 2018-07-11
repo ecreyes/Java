@@ -74,3 +74,29 @@ for(int i = 0; i < 10; i++){
 	System.out.println("i: "+i);
 }
 ```
+
+## Clases,métodos y constructor.
+* modificadorDeAcceso: puede ser public,protected,private
+* tipo: tipo de dato, ej: int,String,char, etc..
+
+Puede haber más de un Constructor en la Clase ya que se permite la sobre carga de métodos.
+
+```java=
+//Clase
+modificadorDeAcceso class NombreClase{
+	//atributos
+	modificadorDeAcceso tipo nombreAtributo1;
+	modificadorDeAcceso tipo nombreAtributo2;
+
+	//Constructor
+	NombreClase(tipo arg1,tipo arg2,etc..){
+		//cuerpo del constructor
+	}
+
+	//Métodos
+	modificadorDeAcceso tipo nombreMétodo(tipo arg1,tipo arg2,etc...){
+		return dato; //si el tipo es void no lleva return.
+	}
+
+}
+```
