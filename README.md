@@ -76,6 +76,55 @@ class Persona{
 }
 ```
 
+### Herencia
+La herencia, como el nombre lo dice, permite crear clases que heredan atributos o métodos de la clase padre.
+
+Sintaxis para hacer una herencia:
+```=java
+Class Persona{
+	.....
+}
+
+Class Empleado extends Persona{
+	....
+}
+```
+
+Para llamar atributos,métodos o constructores de la clase padre se utiliza la palabra reservada `super`,
+si en el constructor de la clase hija se desea utilizar el constructor de la clase padre más alguna inicialización de valores, se debe ingresar como primera linea dentro del contructor de la clase hija
+`super(arg1,arg2,arg..)` donde los arg son los argumentos del constructor de la clase padre.
+
+```=java
+class Persona{
+	private String nombre;
+
+	Persona(String nombre){
+		this.nombre = nombre;
+	}
+
+	@Override
+	public String toString(){
+		return "Nombre: "+nombre;
+	}
+}
+
+class Empleado extends Persona{
+	private int sueldo;
+
+	Empleado(String nombre,int sueldo){
+		super(nombre);
+		this.sueldo = sueldo;
+	}
+
+	@Override
+	public String toString(){
+		return super.toString()+" sueldo: "+sueldo;
+	}
+
+}
+```
+También se pueden sobreescribir métodos de la clase padre utilizando `@Override`
+
 ## Inicialización variables
 Un objeto por default se inicializa con `null`
 un int con 0 y un boolean con false.
