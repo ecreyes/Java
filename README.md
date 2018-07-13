@@ -19,6 +19,23 @@ Se va a instalar Netbeans en español y la versión completa para windows, se pu
 Puede haber más de un Constructor en la Clase ya que se permite la sobre carga de métodos.
 El operador `this` sirve para acceder a los atributos de la clase.
 
+### Encapsulamiento
+El encapsulamiento se encarga de aislar los datos del objeto a otros objetos y de esta forma restring al acceso directo de atributos o métodos.Para hacer esto se utilizan los modificadores de acceso y los métodos get y set.
+
+```=java
+public class Persona{
+	private String nombre;
+
+	public String getNombre(){
+		return this.nombre;
+	}
+
+	public void setString(String nombre){
+		this.nombre = nombre;
+	}
+}
+```
+
 ## Inicialización variables
 Un objeto por default se inicializa con `null`
 un int con 0 y un boolean con false.
