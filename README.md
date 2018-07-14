@@ -307,3 +307,50 @@ modificadorDeAcceso class NombreClase{
 }
 ```
 
+## Arreglos
+Los arreglos pueden ser de tipos primitivos o de Objetos.
+Empiezan desde el 0.
+Los nombres de los arreglos deben ser en plural.
+
+Declaración del arreglo, ambas formas son correctas.
+```=java
+//Una dimensión
+tipo[] nombreArreglo = new tipo[largo];
+tipo nombreArreglo[] = new tipo[largo];
+
+//tipos Primitivos
+int[] enteros = new int[4];
+int enteros[] = new int[4];
+
+boolean[] banderas = new boolean[8];
+boolean banderas[] = new boolean[8];
+
+//Tipos Object
+Persona[] personas = new Persona[5];
+Persona personas[] = new Persona[5];
+
+String[] nombres = new String[6];
+String nombres[] = new String[6];
+```
+
+Asignación y Obtención de datos mediante indice(lo típico)
+```=java
+String nombres = new String[3];
+nombres[0] = "Eduardo";
+nombres[1] = "Pedro";
+nombres[2] = "Diego";
+
+String palabra = nombres[1]; // palabra = "Pedro";
+```
+
+### Declaración, Instanciación e Inicialización (Forma rápida)
+```=java
+//sintaxis
+tipo[] nombreArreglo = {lista de valores separados por coma};
+
+//ejemplos
+int[] edades = {18,19,20,21,22,23};
+
+Persona[] personas = {new Persona(),new Persona("Pedro")};
+String[] palabras = {"Hola","Mundo","Etc"};
+```
