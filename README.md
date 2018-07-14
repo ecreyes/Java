@@ -125,6 +125,31 @@ class Empleado extends Persona{
 ```
 También se pueden sobreescribir métodos de la clase padre utilizando `@Override`
 
+### Sobre carga de constructores.
+Significa que la clase puede tener más de un constructor, hasta un constructor puede llamar a otro utilizando `this()` pero esta debe estar en primera linea del contructor, por ejemplo:
+
+```=java
+public class Persona{
+	private int edad;
+	private String nombre;
+	private int idPersona;
+	private static int contadorPersonas=0;
+	//un constructor
+	private Persona(){
+		contadorPersonas++;
+		idPersona = contadorPersonas;
+	}
+
+	//segundo constructor
+	public Persona(String nombre,int edad){
+		this(); //llama al constructor Persona(),si se usa se pone primero
+		this.nombre = nombre;
+		this.edad = edad;
+	}
+}
+```
+También se puede llamar al constructor de la clase Padre usando `super(args)` como se vio anteriormente.
+
 ## Inicialización variables
 Un objeto por default se inicializa con `null`
 un int con 0 y un boolean con false.
