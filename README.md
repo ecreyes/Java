@@ -165,6 +165,32 @@ Persona p2 = p1;
 
 Memoria Heap se utiliza para almacenar los objetos,tienen tiempo de duracion prologando.
 
+## Paquetes
+Los paquetes en Java son como carpetas, pero estas carpetas solo deben contener Clases.
+Todas las clases creadas en Java DEBEN estar dentro de un paquete.
+La convención del nombre de los paquetes es la siguiente, si la empresa es google.com el paquete se debe llamar com.google.miproyecto.
+
+```=java
+//creación del paquete
+package com.gm;
+public class NombreClase{
+	.....
+	public static String imprimir(){
+		return "Hola mundo";
+	}
+}
+
+
+//uso del paquete en otra clase
+
+//import com.gm.NombreClase.imprimir;
+import com.gm.*;
+public class Ejemplo{
+	System.out.println(NombreClase.imprimir());
+}
+
+```
+
 
 # Sintaxis del lenguaje
 
