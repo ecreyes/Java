@@ -191,6 +191,27 @@ public class Ejemplo{
 
 ```
 
+## Final
+* En variables: evita cambiar el valor que almacena la variable. (es como crear una constante)
+es común  utilizar final con static y más aun utilizar un import static para acceder a la variable 
+directamente.
+
+Las constantes se escriben en Mayúscula, por ejemplo `Math.PI`
+
+* En métodos: evita que se modifique la definición de un método desde una subclase
+* En clases: evita que se cree una sub clase (no se podrá hacer herencia de la clase.)
+
+si se crea un objeto de una clase Final, no se puede cambiar la instanciacion de la clase
+```=java
+//se crea el objeto final
+public static final Persona persona = new Persona();
+
+//manda error si trato de modificarlo
+//persona = new Persona();
+
+//pero si puedo modificar sus atributos.
+persona.setNombre("Eduardo");
+```
 
 # Sintaxis del lenguaje
 
