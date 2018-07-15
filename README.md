@@ -14,6 +14,26 @@ Se va a instalar Netbeans en español y la versión completa para windows, se pu
 
 [Descargar Netbeans](https://netbeans.org/downloads/)
 
+# JavaDoc
+Para utilizar JavaDoc se deben hacer comentarios que inician con `doble *` y terminan con `*`
+por ejemplo:
+```=java
+/**
+*Formato de documentación
+*de javaDoc.
+*/
+```
+En JavaDoc se utilizan etiquetas dentro de los comentarios para referirse a algo
+
+* @author : Nombre del autor del programa.
+* @deprecated: Elemento obsoleto,es de versiones anteriores y no se recomienda el uso.
+* @param: definición de un parámetro del método.
+* @return: descripción de lo que devuelve el método.
+* @see: indica que se asocia con otro método o clase.
+* @version: versión del método o clase.
+
+En el IDE se debe hacer click derecho en el proyecto y seleccionar Generar Javadoc para crear el Javadoc.
+
 # Conceptos.
 ## Orientacion a objetos
 Puede haber más de un Constructor en la Clase ya que se permite la sobre carga de métodos.
