@@ -354,3 +354,22 @@ int[] edades = {18,19,20,21,22,23};
 Persona[] personas = {new Persona(),new Persona("Pedro")};
 String[] palabras = {"Hola","Mundo","Etc"};
 ```
+
+## Matrices
+Forma de acceso:
+```=java
+matriz[fila][columna];
+```
+
+Declaración
+```=java
+tipo[][] nombreMatriz = new tipo[filas][columnas];
+tipo nombreMatriz[][] = new tipo[filas][columnas];
+```
+### Declaración, Instanciación e Inicialización (Forma rápida)
+```=java
+tipo[][] nombreMatriz = {{listaValores},{listaValores}};
+
+//4 filas, 3 columnas
+int[][] valores = {{13,14,15},{20,21,22},{30,40,50},{18,29,45}};
+```
