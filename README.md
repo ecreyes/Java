@@ -233,6 +233,35 @@ public static final Persona persona = new Persona();
 persona.setNombre("Eduardo");
 ```
 
+## Argumentos Variables - varargs
+Los argumentos variables permiten enviar un número indefinido de parametros a una función o método,para realizar esto se debe seguir la siguiente sintaxis:
+```=java
+public void nombreMetedo(tipo... args){
+	//contenido
+}
+```
+al colocar los tres puntos seguido del tipo empieza a funcionar los argumentos variables.
+Los parametros enviados al método son recibidos por el argumento en formato de arreglo.
+
+Ejemplo:
+```=java
+public class ArgumentosVariables {
+    public static void main(String[] args) {
+        imprimirNumeros(10,20);
+        System.out.println("");
+        imprimirNumeros(1,2,3,4,5,6,7,8);
+    }
+
+    public static void imprimirNumeros(int... numeros){
+        int elemento;
+        for (int i = 0; i < numeros.length; i++) {
+            elemento = numeros[i];
+            System.out.println("numero: "+elemento);
+        }
+    }
+}
+```
+
 # Sintaxis del lenguaje
 
 ## Main para ejecutar en consola
