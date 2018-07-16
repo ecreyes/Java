@@ -332,6 +332,14 @@ for(int i = 0; i < 10; i++){
 }
 ```
 
+## ForEach
+datos es el arreglo a recorrer, elemento es la variable que recorrerá el arreglo.
+```=java
+for(tipo elemento:datos){
+	System.out.println(elemento);
+}
+```
+
 ## Clases,métodos y constructor.
 * modificadorDeAcceso: puede ser public,protected,private
 * tipo: tipo de dato, ej: int,String,char, etc..
