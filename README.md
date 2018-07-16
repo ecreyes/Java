@@ -262,6 +262,17 @@ public class ArgumentosVariables {
 }
 ```
 
+También se puede combinar con otros argumentos, pero este debe ser colocado como último parámetro.
+```=java
+public static void variosParametros(String nombre,boolean valido,int... numeros){
+    System.out.println("Nombre: "+nombre);
+    System.out.println("Valido: "+valido);
+    for(int elemento:numeros){
+        System.out.println("numero: "+elemento);
+    }
+}
+```
+
 # Sintaxis del lenguaje
 
 ## Main para ejecutar en consola
