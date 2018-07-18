@@ -272,6 +272,55 @@ public static void variosParametros(String nombre,boolean valido,int... numeros)
     }
 }
 ```
+## Enumeraciones
+Las enumeraciones son un tipo especial de clase,esta nos permite asociar una serie de valores de tipo final,es decir que son constantes.
+```=java
+public enum Dias{
+	LUNES,
+	MARTES,
+	MIERCOLES,
+	JUEVES,
+	VIERNES,
+	SABADO,
+	DOMINGO
+}
+```
+por convención se debe escribir en mayúscula.
+
+Las enumeracions también pueden tener atributos, métodos y constructores.
+```=java
+public enum Continentes {
+	//creación de enumeraciones.
+    AFRICA(53),
+    EUROPA(46),
+    ASIA(44),
+    AMERICA(34),
+    OCEANIA(14);
+
+    //atributos    
+    private final int paises;
+    
+    //contructor
+    Continentes(int paises){
+        this.paises = paises;
+    }
+    
+    //metodos
+    public int getPaises(){
+        return paises;
+    }
+}
+```
+
+El método `.values()` permite obtener todos los valores de la enumeración.
+```=java
+public static void imprimirContinentes(){
+    for(Continentes c: Continentes.values()){
+        System.out.println("Contiente: "+c+" paises: "+c.getPaises());
+    }
+}
+```
+
 
 # Sintaxis del lenguaje
 
@@ -440,4 +489,24 @@ tipo[][] nombreMatriz = {{listaValores},{listaValores}};
 
 //4 filas, 3 columnas
 int[][] valores = {{13,14,15},{20,21,22},{30,40,50},{18,29,45}};
+```
+
+## Enumeraciones
+```=java
+public enum NombreClase{
+	NOMBRE,
+	NOMBRE2,
+	NOMBRE3,
+	ETC,
+}
+
+public enum Dias{
+	LUNES,
+	MARTES,
+	MIERCOLES,
+	JUEVES,
+	VIERNES,
+	SABADO,
+	DOMINGO
+}
 ```
