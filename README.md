@@ -321,6 +321,47 @@ public static void imprimirContinentes(){
 }
 ```
 
+## Bloques de código.
+Es una parte del código que inicia con `{` y termina con `}`, sirve para inicializar variables.
+El bloque inicializador(o anónimo) se ejecuta antes que el constructor
+```=java
+public class Persona {
+    private final int idPersona;
+    private static int contadorPersonas;
+    //bloque static
+    static{
+        System.out.println("Se ejecuta bloque static");
+        contadorPersonas=10;
+    }
+    //bloque inicializador
+    {
+        System.out.println("Ejecuta bloque inicializador");
+        idPersona = ++contadorPersonas;
+    }
+    
+    Persona(){
+        System.out.println("Ejecuta constructor");
+    }
+    
+    public int getIdPersona(){
+        return idPersona;
+    }
+    
+    public static int getContadorPersonas(){
+        return contadorPersonas;
+    }
+}
+```
+
+Bloque de código static
+```=java
+//variables static o métodos static para inicializar
+static{
+	//contenido
+}
+```
+
+
 
 # Sintaxis del lenguaje
 
