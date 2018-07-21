@@ -369,6 +369,40 @@ Se debe mantener el tipo, el nombre del método y los parametros que recibe.
 
 Se debe anteponer @Override en el método nuevo.
 
+## Polimorfismo
+Habilidad de ejecutar métodos (que hayan sido sobreescritos por ejemplo en una clase hija) en tipos distintos (de objetos)
+
+Un objeto de un tipo puede referenciar a un objeto de otro tipo siempre y cuando haya una relacion como por ejemplo Herencia.
+
+```=java
+Empleado emp = new Empleado("Eduardo",1000000); //nombre y sueldo
+emp.obtenerDetalle(); // método que retorna nombre y sueldo, propio de la clase Empleado
+
+emp = new Gerente("Eduardo2",1000000,"Java");  //Gerente extends de Empleado,tercer elemento es departamento
+emp.obtenerDetalle(); //retorna nombre,sueldo y departamento, se usa el método que se sobreescribio en Gerente.
+```
+
+En resumen: Se ejecuta el método del Tipo que apunta en tiempo de ejecución,en este caso el Tipo es Empleado pero esta aputando a Gerente, por lo que usa el método de Gerente.
+
+Tambien se puede utilizar `super` para reutilizar código al sobreescribir un método.
+
+```=java
+public class Empleado{
+	protected String nombre;
+	protected int sueldo;
+	public String obtenerDetalle(){
+        return "Nombre: "+nombre+" Sueldo: "+sueldo;
+    }
+}
+
+public class Gerente extends Empleado{
+	private String departamento;
+	@Override
+    public String obtenerDetalle(){
+        return super.obtenerDetalle()+ " Departamento: "+departamento;
+    }
+}
+```
 
 # Sintaxis del lenguaje
 
