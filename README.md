@@ -361,6 +361,13 @@ static{
 }
 ```
 
+## Sobreescritura de métodos.(Overriding)
+La sobreecritura de métodos consiste en que una clase Hija puede sobreescribir el método de una clase Padre para tener un comportamiento diferente.
+
+El modificador de acceso se puede cambiar a MENOS RESTRICTIVO no se puede cambiar a uno más restrictivo.
+Se debe mantener el tipo, el nombre del método y los parametros que recibe.
+
+Se debe anteponer @Override en el método nuevo.
 
 
 # Sintaxis del lenguaje
