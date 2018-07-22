@@ -404,6 +404,33 @@ public class Gerente extends Empleado{
 }
 ```
 
+## InstanceOf
+Permite conocer el Tipo del objeto,devuelve True o False.
+Es recomendable usarla de menor jerarquia a mayor.
+Ejemeplo
+FiguraGeometrica->Circulo->Elipse (Jerarquía de las clases.)
+
+```=java
+public static void main(String[] args){
+	FiguraGeometrica figura;
+	figura = new Elipse();
+	determinaTipo(figura);
+
+	private static void determinaTipo(FiguraGeometrica figura){
+		if(figura instanceof Elipse){
+			System.out.println("Es de tipo Elipse");
+		}
+		if(figura instanceof Circulo){
+			System.out.println("Es de tipo Circulo");
+		}
+		if(figura instanceof FiguraGeometrica){
+			System.out.println("Es de tipo FiguraGeomtrica");
+		}
+	}
+}
+```
+Si se quisiera saber solamente 1 tipo bastaria con cambiar los dos if por else if.
+
 # Sintaxis del lenguaje
 
 ## Main para ejecutar en consola
