@@ -431,6 +431,22 @@ public static void main(String[] args){
 ```
 Si se quisiera saber solamente 1 tipo bastaria con cambiar los dos if por else if.
 
+## Conversión de Objetos.
+Para hacer un casteo debe haber una relación, como por ejemplo Herencia.
+Hay dos tipos de Casteos, Upcasting y Downcasting.
+`Upcasting`:Casteo hacia arriba,,hacia una clase superior, es automático
+`Downcasting:`Casteo hacia abajo, hacia una clase menor.
+Por ejemplo hay dos clases: Empleado->Escritor, donde una es padra y la otra es hija.
+```=java
+Empleado emp = new Escritor(); // Upcasting automático
+```
+Al hacer la conversión anterior, `emp` no podría usar los métodos de la clase Escritor, para solucionar ese problema se debería hacer un casteo o Downcasting
+```=java
+Empleado emp = new Escritor();
+resultado = ((Escritor)emp).getTipoEscritura(); //el casteo para usar el método.
+```
+El Downcasting se hace anteponiendo un parentesis y dentro de el escribir entre parentesis el tipo a convertir seguido de la variable.
+
 # Sintaxis del lenguaje
 
 ## Main para ejecutar en consola
