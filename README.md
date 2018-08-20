@@ -470,6 +470,16 @@ public class Main{
 != //distinto
 ```
 
+## Input-Output (IO)
+Se tiene que importar `import java.util.*;`
+```=java
+String captura;
+Scanner scan = new Scanner(System.in);
+System.out.println("Introduce un dato");
+captura = scan.nextLine();
+System.out.println(captura);
+```
+
 ## If
 ```java=
 if(condition){
