@@ -635,3 +635,30 @@ public enum Dias{
 	DOMINGO
 }
 ```
+
+## Listas
+Se utilizan los siguientes métodos:
+* add: añade un elemento a la lista.
+* remove: elimina un elemento de la lista,se tiene que indicar la posicion.
+
+Forma de crear una lista
+```=java
+Arraylist<tipo> nombreVar = new Arraylist<>();
+```
+donde el tipo va a indicar los elementos que puede contener la lista,por ejemplo:
+```=java
+    ArrayList<String> lista = new ArrayList<>();
+    lista.add("1");
+    lista.add("Eduardo");
+    lista.add("Reyes");
+    for(String elemento:lista){
+        System.out.println(elemento);
+    }
+    lista.add("uno");
+    lista.add("dos");
+    lista.remove(3);
+    System.out.println("");
+    for(String elemento:lista){
+        System.out.println(elemento);
+    }
+```
