@@ -24,3 +24,13 @@ Para una sentencia DML/DDL (INSERT-UPDATE-DELETE)/(CREATE TABLE,USE TABLE,ETC):
 
 Para cualquier sentencia SQL:
 * execute(String sql): regresa un bool, true para SELECT(se entregó un ResultSet), false otro caso.
+
+## Transacción
+Una transacción es un conjunto de instrucciones agrupadas en un bloque de ejecución.
+Uso de métodos en una transacción:
+* autocommit: valores true o false.(para hacer una transacción se hace un autocommit con false.)
+* commit: guarda los cambios en la base de datos del bloque de ejecución.(en caso de que no haya errores.)
+* rollback: Revierte los cambios realizados por el bloque de ejecución.(en caso de error.)
+
+Por default, la propiedad de autocommit tiene el valor de true.
+Si cerramos la conexión a la BD se hace un commit,incluso si se deshabilitó el autocommit.
