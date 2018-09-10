@@ -637,7 +637,7 @@ Se utilizan los siguientes métodos:
 
 Forma de crear una lista
 ```=java
-Arraylist<tipo> nombreVar = new Arraylist<>();
+ArrayList<tipo> nombreVar = new ArrayList<>();
 ```
 donde el tipo va a indicar los elementos que puede contener la lista,por ejemplo:
 ```=java
@@ -655,4 +655,43 @@ donde el tipo va a indicar los elementos que puede contener la lista,por ejemplo
     for(String elemento:lista){
         System.out.println(elemento);
     }
+```
+
+## Multiples ArrayList.
+```java
+import java.util.ArrayList;
+
+public class MyClass {
+    public static void main(String args[]) {
+        //inicializar
+        ArrayList<ArrayList<String>> contenido = new ArrayList<>();
+        ArrayList<String> test = new ArrayList<>();
+        
+        //agregar
+        test.add("autor0");
+        test.add("cita0");
+        contenido.add(test);
+        
+        test = new ArrayList<>();
+        test.add("autor1");
+        test.add("cita1");
+        contenido.add(test);
+        
+        test = new ArrayList<>();
+        test.add("autor2");
+        test.add("cita2");
+        contenido.add(test);
+        
+        //recorer
+        for(int i = 0; i < contenido.size(); i++){
+        	System.out.println(contenido.get(i));
+        	System.out.println(contenido.get(i).get(0));
+            System.out.println(contenido.get(i).get(1));
+            System.out.println("");
+        }
+        
+        //obteniendo uno especifico.
+        System.out.println(contenido.get(1).get(1));
+    }
+}
 ```
